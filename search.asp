@@ -6,7 +6,7 @@
 	
 	<p align="center">
 	<input type="text" name="keyword" size="20"></p>
-	<p align="center"><input type="submit" value="search" name="B1"></p>
+	<p align="center"><input type="submit" value="search" name="B1"></pp>
 </form>
 
 <!--#include file="pageEnd.txt" -->
