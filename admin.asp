@@ -6,7 +6,7 @@
 </head>
 
 <body>
-<p>  This is Admin page </pp>
+<p>  This is Admin page </p>
 <!-- this is remark> 
 
 </body>
