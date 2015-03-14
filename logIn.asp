@@ -13,7 +13,7 @@
   <input type="password" name="Password" size="20" value="12345678"></p>
   <p>
 
-  <input type="submit" value="Submit" name="submit"></p>
+  <input type="submit" value="Suuuuuuuuuuubmit" name="submit"></p>
   
   </form>
   <%
@@ -21,16 +21,16 @@
   If error <> "" then
 
      If error = "Name_Null" Then
-        Response.write "<b><font color=#FF0000>·„  œŒ· «”„ «·„” Œœ„</font></b>"
+        Response.write "<b><font color=#FF0000>√°√£ √ä√è√é√° √á√ì√£ √á√°√£√ì√ä√é√è√£</font></b>"
      Else
         If error = "Pass_Null" Then
-           Response.write "<b><font color=#FF0000>·„  œŒ· «·—ﬁ„ «·”—Ì</font></b>"
+           Response.write "<b><font color=#FF0000>√°√£ √ä√è√é√° √á√°√ë√û√£ √á√°√ì√ë√≠</font></b>"
          Else
             If error = "Name_Entry" Then
-               Response.write "<b><font color=#FF0000>·ﬁœ «œŒ·  «”„ „” Œœ„ Œÿ√</font></b>"
+               Response.write "<b><font color=#FF0000>√°√û√è √á√è√é√°√ä √á√ì√£ √£√ì√ä√é√è√£ √é√ò√É</font></b>"
             Else
                If error = "Pass_Entry" Then
-                  Response.write "<b><font color=#FF0000>·ﬁœ √œŒ·  —ﬁ„ ”—Ì Œÿ√</font></b>"
+                  Response.write "<b><font color=#FF0000>√°√û√è √É√è√é√°√ä √ë√û√£ √ì√ë√≠ √é√ò√É</font></b>"
                End If
             End If
          End If
