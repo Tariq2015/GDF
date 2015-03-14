@@ -23,7 +23,7 @@
            		     response.Redirect ("logIn.asp?error=Name_Entry")
          
          		  Else       
-                       If rs("pass") <> password Then
+                       If rs("passe") <> password Then
                           response.redirect ("logIn.asp?error=Pass_Entry")
           
                        Else
