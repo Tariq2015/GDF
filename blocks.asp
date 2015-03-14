@@ -6,7 +6,7 @@
 
 <%
 	field=request.querystring("field")
-	id=request.querystring("id")
+
 	
 	selectSQL="select * from "&field&" where id="&id
 	set rs=ADO.execute(selectSQL)
