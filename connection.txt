@@ -1,12 +1,12 @@
 <%
 
-'ÃæÇãÑ ÝÊÍ ÞÇÚÏÉ ÇáÈíÇäÇÊ
+'ÃƒÃ¦Ã‡Ã£Ã‘ ÃÃŠÃ ÃžÃ‡ÃšÃÃ‰ Ã‡Ã¡ÃˆÃ­Ã‡Ã¤Ã‡ÃŠ
 
 Dim ConnectionString
 Dim ADO
 
 ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;" & "Data Source=" & Server.MapPath("\GDF\gdf.mdb")
-Set ADO=Server.CreateObject("ADODB.Connection")
+Set ADO=Server.CreateObject("ADODB1.Connection")
 ADO.ConnectionString =ConnectionString
 ADO.Open
 
