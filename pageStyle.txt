@@ -7,7 +7,7 @@
 
 <body>
 
-<p align="right"><img border="0" align="right" src="ulogo.jpg">
+<p align="left"><img border="0" align="left" src="ulogo.jpg">
 </p>
 <hr>
 <p align="center"><img border="0" src="title.jpg"> &nbsp;&nbsp;&nbsp; <img border="0" src="p1.jpg"></p>
@@ -17,11 +17,11 @@
  
   <td valign="top"  width="200" bgcolor="#c0c0c0">
 	 
-	    <p align="right"><font face="Simplified Arabic" size="3"><b><a href="default.asp">Home Page </a>
-	    <p align="right"><font face="Simplified Arabic" size="3"><b><a href="topicHeads.asp">Forum Topics </a>
-	    <p align="right"><font face="Simplified Arabic" size="3"><b><a href="search.asp">Search </a>
-	    <p align="right"><font face="Simplified Arabic" size="3"><b><a href="discussion.asp">General Discussion Area </a>
-	    <p align="right"><font face="Simplified Arabic" size="3"><b><a href="contact.asp" >Contact Us </a>
+	    <p align="left"><font face="Simplified Arabic" size="3"><b><a href="default.asp">Home Page </a>
+	    <p align="left"><font face="Simplified Arabic" size="3"><b><a href="topicHeads.asp">Forum Topics </a>
+	    <p align="left"><font face="Simplified Arabic" size="3"><b><a href="search.asp">Search </a>
+	    <p align="left"><font face="Simplified Arabic" size="3"><b><a href="discussion.asp">General Discussion Area </a>
+	    <p align="left"><font face="Simplified Arabic" size="3"><b><a href="contact.asp" >Contact Us </a>
 	 
 	</td>
 	<td>  
