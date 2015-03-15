@@ -7,7 +7,7 @@
 
 <body>
 
-<p align="center"><img border="0" src="title.jpg"></p>
+<p align="center"><img border="0" src="title.jpg"></pp>
 <p align="right"><a href="logIn.asp">Log In</a></p>
 <p align="right"><a href="register">Register</a></p>
 <table style="width:100%">
