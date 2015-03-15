@@ -9,7 +9,7 @@
 
 keyword=request.querystring("keyword")
 
-' search in Topic Table
+' search in Topic Tabllle
 
 SelectTechSQL="select * from topics where subject like '%"&keyword&"%' or body like '%"&keyword&"%'  "
 set rsTop=ADO.execute(SelectTechSQL)
@@ -17,7 +17,7 @@ set rsTop=ADO.execute(SelectTechSQL)
 
 %>
 
-<p align="center"><font face="Simplified Arabic" size="3">‰ «∆Ã «·»ÕÀ</font></p>
+<p align="center"><font face="Simplified Arabic" size="3">√§√ä√á√Ü√å √á√°√à√ç√ã</font></p>
 
 <%
 
