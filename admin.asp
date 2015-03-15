@@ -4,10 +4,10 @@
 <head>
 	<title>Untitled</title>
 </head>
-
+</head>
 <body>
 <p>  This is Admin page </p>
 <!-- this is remark> 
-
+</body>
 </body>
 </html>
