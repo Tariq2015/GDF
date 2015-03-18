@@ -1,6 +1,6 @@
 <%
 
-'ÃæÇãÑ ÝÊÍ ÞÇÚÏÉ ÇáÈíÇäÇÊ
+
 
 Dim ConnectionString
 Dim ADO
