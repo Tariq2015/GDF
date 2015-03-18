@@ -1,4 +1,4 @@
-<!--#include file="pageStyle.txt" -->
+﻿<!--#include file="pageStyle.txt" -->
   <body dir="ltr">
   
 
@@ -13,7 +13,7 @@
   <input type="password" name="Password" size="20" value="12345678"></p>
   <p>
 
-  <input type="submit" value="Submit" name="submit"></p>
+  <input type="submit" value="Suuuuuuuuuuubmit" name="submit"></p>
   
   </form>
   <%
@@ -21,6 +21,7 @@
   If error <> "" then
 
      If error = "Name_Null" Then
+<<<<<<< HEAD
         Response.write "<b><font color=#FF0000>please inter user name</font></b>"
      Else
         If error = "Pass_Null" Then
@@ -31,18 +32,5 @@
             Else
                If error = "Pass_Entry" Then
                   Response.write "<b><font color=#FF0000>wrong password</font></b>"
-               End If
-            End If
-         End If
-      End If
-    
-  End If    
-  %>
-  
-
-  </td>
-  
-</table>
-
-</body>
-</html>
+=======
+      

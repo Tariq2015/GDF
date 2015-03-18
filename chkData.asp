@@ -23,23 +23,8 @@
            		     response.Redirect ("add_comm.asp?error=Name_Entry")
          
          		  Else       
+<<<<<<< HEAD
                        If rs("password") <> password Then
                           response.redirect ("add_comm.asp?error=Pass_Entry")
-          
-                       Else
-         
-                           Name_Cooky= request.cookies("Name")
-                                        
-                           If Name_Cooky  <> Name then
-                              response.cookies ("Name")=Name
-                 
-                           End IF
-                           response.Redirect ("comment_inf.asp")
-     
-                       End If
-             
-                   End If
-     
-                End If
-            End If
-     %>
+=======
+                    

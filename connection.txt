@@ -1,13 +1,5 @@
-<%
+﻿<%
 
+<<<<<<< HEAD
 
-
-Dim ConnectionString
-Dim ADO
-
-ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;" & "Data Source=" & Server.MapPath("\GDF\gdf.mdb")
-Set ADO=Server.CreateObject("ADODB.Connection")
-ADO.ConnectionString =ConnectionString
-ADO.Open
-
-%>
+=======

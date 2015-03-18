@@ -5,7 +5,7 @@
 
 <body>
 
-<p align="right"><img border="0" align="left" src="ulogo.jpg">
+<p align="left"><img border="0" align="left" src="ulogo.jpg">
 </p>
 <hr>
 <p align="center"><img border="0" src="title.jpg"> &nbsp;&nbsp;&nbsp; <img border="0" src="p1.jpg"></p>
