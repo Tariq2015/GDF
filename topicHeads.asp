@@ -1,7 +1,3 @@
-<%@ Language=VBScript CodePage = "1256"%>
-
-<html dir=ltr>
-
 <!--#include file="pageStyle.txt" -->
 
 <p align="center"><font face="Simplified Arabic">This is our Topics ....</font></p>
@@ -23,7 +19,8 @@
 		<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="90%">
 			<tr>
 				<td width="100%" dir="ltr" bgcolor="#DFDFFF">
-				   <b>TOPIC  : <%response.write rs("id")%> &nbsp;&nbsp;&nbsp;  <%response.write rs("topic")%></b>
+				   <b><a href="showTopic.asp?field=<%=rs("topic")%>"><%response.write rs("topic")%></a></b>
+				  
 				</td>
 			</tr>
 		
@@ -36,9 +33,10 @@
 loop
 
 ADO.close
+Set ADO=Nothing
 %>
 
-<p align="center"><font face="Simplified Arabic"><a href="sign_book.asp">Suggest Topic</a></font></p>
+<p align="center"><font face="Simplified Arabic"><a href="const.asp">Suggest Topic</a></font></p><!-- sug_topic -->
 
-<!--# include file "pageEnd.txt"-->
+<!--#include file="pageEnd.txt" -->
 
