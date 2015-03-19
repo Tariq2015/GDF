@@ -1,4 +1,4 @@
-<%@ Language=VBScript CodePage = "1256"%>
+
 
 <%   Name=Request.form("Name")
      Password=Request.form("Password")
@@ -6,35 +6,35 @@
      
      
       If Name = "" Then
-             response.redirect ("logIn.asp?error=Name_Null")
+             response.redirect ("add_comm.asp?error=Name_Null")
    
           Else
               If Password = "" Then
-                 response.redirect ("logIn.asp?error=Pass_Null")
+                 response.redirect ("add_comm.asp?error=Pass_Null")
               Else
             
                   
                    %><!--#include file="connection.txt" --><%
                    
-        		  SelectSql="Select * from admin where name='"&Name&"'"
+        		  SelectSql="Select * from customers where nam='"&Name&"'"
          		  set rs=ADO.execute (SelectSql)
 
-         		  If rs.eof  then ' 
-           		     response.Redirect ("logIn.asp?error=Name_Entry")
+         		  If rs.eof  then 
+           		     response.Redirect ("add_comm.asp?error=Name_Entry")
          
          		  Else       
-                       If rs("pass") <> password Then
-                          response.redirect ("logIn.asp?error=Pass_Entry")
+                       If rs("password") <> password Then
+                          response.redirect ("add_comm.asp?error=Pass_Entry")
           
                        Else
          
                            Name_Cooky= request.cookies("Name")
-                                           
+                                        
                            If Name_Cooky  <> Name then
                               response.cookies ("Name")=Name
                  
                            End IF
-                           response.Redirect ("admin.asp")
+                           response.Redirect ("comment_inf.asp")
      
                        End If
              
