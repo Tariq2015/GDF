@@ -1,5 +1,3 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-
 <html>
 <head>
 	<title>General Discussion Forum</title>
@@ -20,9 +18,11 @@
 	    <p align="left"><font face="Simplified Arabic" size="3"><b><a href="default.asp">Home Page </a>
 	    <p align="left"><font face="Simplified Arabic" size="3"><b><a href="topicHeads.asp">Forum Topics </a>
 	    <p align="left"><font face="Simplified Arabic" size="3"><b><a href="search.asp">Search </a>
-	    <p align="left"><font face="Simplified Arabic" size="3"><b><a href="discussion.asp">General Discussion Area </a>
 	    <p align="left"><font face="Simplified Arabic" size="3"><b><a href="contact.asp" >Contact Us </a>
-	 
+	    <p></p>
+		<p></p>
+		<p></p>
+		<p align="left"><font face="Simplified Arabic" size="3"><b><a href="admin.asp" >  Adminstration  </a>
 	</td>
 	<td>  
 	  
