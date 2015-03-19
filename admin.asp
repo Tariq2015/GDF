@@ -32,18 +32,13 @@
             Else
                If error = "Pass_Entry" Then
                   Response.write "<b><font color=#FF0000>wrong password</font></b>"
-               End If
-            End If
-         End If
-      End If
-    
-  End If    
-  %>
-  
+           
 
   </td>
   
 </table>
 
 </body>
+<<<<<<< HEAD
 </html>
+=======
