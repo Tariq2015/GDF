@@ -1,17 +1,23 @@
+<<<<<<< HEAD
 
 
 <html dir=ltr>
+=======
+>>>>>>> origin/master
 
 <!--#include file="pageStyle.txt" -->
-
-<p align="center"><font face="Simplified Arabic">well come in our topic</font></p>
-
 
 <!--#include file="connection.txt" -->
 
 
+<<<<<<< HEAD
 <%
 field=request.querystring("field")
+=======
+<% field=request.querystring("field") %>
+<p align="center"><font face="Simplified Arabic">well come in our topic: <%response.write (field)%></font></p>
+<%
+>>>>>>> origin/master
 selectSQL="select * from topics_details where topic like '%"&field&"%' order by add_dat desc"
 
 set rs=ADO.execute(selectSQL)

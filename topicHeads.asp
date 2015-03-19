@@ -1,7 +1,10 @@
+<<<<<<< HEAD
 
 
 <html dir=ltr>
 
+=======
+>>>>>>> origin/master
 <!--#include file="pageStyle.txt" -->
 
 <p align="center"><font face="Simplified Arabic">This is our Topics ....</font></p>
@@ -37,9 +40,14 @@
 loop
 
 ADO.close
+Set ADO=Nothing
 %>
 
+<<<<<<< HEAD
 <p align="center"><font face="Simplified Arabic"><a href="sug_topic.asp">Suggest Topic</a></font></p>
+=======
+<p align="center"><font face="Simplified Arabic"><a href="const.asp">Suggest Topic</a></font></p><!-- sug_topic -->
+>>>>>>> origin/master
 
-<!--# include file "pageEnd.txt"-->
+<!--#include file="pageEnd.txt" -->
 

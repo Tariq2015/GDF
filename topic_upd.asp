@@ -20,7 +20,11 @@ End If
 
 function updatef()
 
+<<<<<<< HEAD
 	updateSQL= " update topics_details set topic = '"&topic&"' ,subject = '"&subject&"' , body = '"&body&"' where id="&id 
+=======
+	updateSQL= " update topics_details set topic = '"&topic&"' ,subject = '"&subject&"' where id="&id 
+>>>>>>> origin/master
 	ADO.execute(updateSQL)
 	%><p><font face="Simplified Arabic" size="3">This subject updated .....</font></p><%
 

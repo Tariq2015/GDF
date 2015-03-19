@@ -34,6 +34,7 @@ do while not rsTop.eof
  
 <%
 	ADO.close
+	set ADO=nothing
 %>
 <!--#include file="pageEnd.txt" -->
 
