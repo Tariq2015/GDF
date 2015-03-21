@@ -1,7 +1,7 @@
-<!--#include file="pageStyle.txt" -->
-  <body dir="ltr">
-  <body dir="ltr">
-<body dir="ltr">
+
+=======
+  
+>>>>>>> origin/master
   <form method="POST" action="chkData.asp" name="Login">
   <p dir="ltr">
   &nbsp;</p>
