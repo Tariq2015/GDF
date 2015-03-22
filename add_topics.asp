@@ -3,9 +3,11 @@
 <!--#include file="connection.txt"-->
 <body>
 
+
 <%
 selectSQL="select * from topics_suggest"
 	set rs=ADO.execute(selectSQL)
+
 
 	
 %>
