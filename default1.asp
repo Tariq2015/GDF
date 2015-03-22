@@ -5,6 +5,8 @@
 	<title>Untitled</title>
 </head>
 
+
+
 <body>
 
 <div   style="top: 5; right: 40; position: absolute; z-index: 1;  visibility: show;">
@@ -13,6 +15,7 @@
 		<a href="register">Register</a>
 	</p>
 </div>
+
 
 
 <p align="center"><img border="0" src="title.jpg"></p>
@@ -42,12 +45,14 @@
     <td></td>
   </tr>
   
+  
   <tr>
     <td><p align="left"><font face="Simplified Arabic" size="3"><b><a href="topics.asp">Search </a></td>
     <td></td>
     <td></td>
   </tr>
 </table>
+
 
 </body>
 </html>
