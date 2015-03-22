@@ -13,6 +13,8 @@ function updatef()
 
 end function
 
+
+
 function checkf()
 
 	selectSQL="select * from admin where name='"&username&"'"
@@ -54,6 +56,8 @@ else
 	end if
 end if
 
+
+
 %>
 
 
@@ -74,6 +78,7 @@ end if
 ADO.Close 
 Set ADO=Nothing
 %>
+
 
 </BODY>
 </HTML>
