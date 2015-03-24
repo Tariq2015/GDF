@@ -2,8 +2,7 @@
   <body dir="ltr">
   
 
-  <form method="POST" action="chkData.asp" name="Login">
-  <p dir="ltr">  &nbsp;</p>
+  
   <p >  You should be a registered customer to be able to comment </p>
   <p >  please LogIn here  </p>
   
