@@ -1,8 +1,6 @@
 
 
-<%   Name=Request.form("Name")
-     Password=Request.form("Password")
-         
+
      
      
       If Name = "" Then
