@@ -1,17 +1,13 @@
-<%@ Language=VBScript CodePage = "1256"%>
-
-<html dir=ltr>
 
 <!--#include file="pageStyle.txt" -->
 
-<p align="center"><font face="Simplified Arabic">well come in our topic</font></p>
-
-
 <!--#include file="connection.txt" -->
 
-<%
 
-selectSQL="select * from topics order by add_dat desc"
+<% field=request.querystring("field") %>
+<p align="center"><font face="Simplified Arabic">well come in our topic: <%response.write (field)%></font></p>
+<%
+selectSQL="select * from topics_details where topic like '%"&field&"%' order by add_dat desc"
 
 set rs=ADO.execute(selectSQL)
 
@@ -42,9 +38,10 @@ do while not rs.eof
 loop
 
 ADO.close
+set ADO=Nothing
 %>
 
-<p align="center"><font face="Simplified Arabic"><a href="sign_book.asp">√÷› „·«ÕŸ« ﬂ</a></font></p>
+<p align="center"><font face="Simplified Arabic"><a href="add_comm.asp">Add Comment</a></font></p>
 
 <!--# include file "pageEnd.txt"-->
 

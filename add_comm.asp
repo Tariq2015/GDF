@@ -3,18 +3,15 @@
   
 
   <form method="POST" action="chkData.asp" name="Login">
-  <p dir="ltr">
-  &nbsp;</p>
-  <p >  Give your name and password to inter</p>
-  <p >
- customer name :
-  <input type="text" name="Name" size="20" value="admin"></p>
-  <p>customer password :
-  <input type="password" name="Password" size="20" value="12345678"></p>
-  <p>
-
-  <input type="submit" value="Submit" name="submit"></p>
-  
+		  <p dir="ltr">  &nbsp;</p>
+		  <p >  You should be a registered customer to be able to comment </p>
+		  <p >  please LogIn here  </p>
+		  <p > customer name :
+		  <input type="text" name="Name" size="20" ></p>
+	      <p>customer password :
+		  <input type="password" name="Password" size="20" ></p>
+	  
+		  <p></p><input type="submit" value="Submit" name="submit"></p>
   </form>
   <%
   error=Request.querystring("error")
@@ -40,9 +37,4 @@
   %>
   
 
-  </td>
-  
-</table>
-
-</body>
-</html>
+<!--#include file="pageEnd.txt" -->
