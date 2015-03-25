@@ -2,11 +2,15 @@
 
 <!--#include file="pageStyle.txt" -->
 
+
+
 <p>  here to add customer comment </p>
 
 
 
 <!--#include file="connection.txt"-->
+
+
 
 <%
 topic=request.form("topic")
@@ -19,14 +23,21 @@ body=request.form("body")
 Function AddF()
 
 addSQL= " insert into topics_details (topic,subject,body) values ('"&topic&"','"&subject&"','"&body&"')"
+<<<<<<< HEAD
 'add1SQL= " insert into topics (topic) values ('"&topic&"')"
 ADO.execute(addSQL)
 'ADO.execute(add1SQL)
+=======
+add1SQL= " insert into topics (topic) values ('"&topic&"')"
+ADO.execute(addSQL)
+ADO.execute(add1SQL)
+>>>>>>> origin/master
 %><p><font face="Arial" size="4" color="#008000">Thank you for your comment .. comment added</font></p><%
 
 End Function
 %>
 <body>
+<<<<<<< HEAD
 <%
    showTopic= " select * from topics "
    set rsTopic=ADO.execute(showTopic)
@@ -40,6 +51,11 @@ End Function
 			  <% rsTopic.movenext
 			     loop %>
 			  </select></b></p>
+=======
+<p align="center"><font color="#C11111" size="7" face="Simplified Arabic"><b>comment</b></font></p>
+<form method="POST" action="comment_inf.asp">
+     <p><b>Topic: <input type="text" name="topic" size="20"></b></p>
+>>>>>>> origin/master
      <p><b>Subject: <input type="text" name="subject" size="20"></b></p>
      <p><b>comment: </b></p> 
      <p><b>&nbsp;<textarea rows="11" name="body" cols="78"></textarea></b></p>

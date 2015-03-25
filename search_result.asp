@@ -41,6 +41,7 @@
 	SelectsubSQL="select * from topics_details where subject like '%"&keyword&"%' "
 	set rsSub=ADO.execute(SelectsubSQL)
 
+<<<<<<< HEAD
     do while not rsSub.eof
 %>
 	     <p><b><a href="blocks.asp?field=topics_details&id=<%=rsSub("id")%>"><%response.write rsSub("subject")%></a></b></p>
@@ -49,6 +50,20 @@
 	loop   
    end function
 %>
+=======
+keyword=request.querystring("keyword")
+
+' search in Topic Table
+
+SelectTechSQL="select * from topics_details where topic like '%"&keyword&"%' or subject like '%"&keyword&"%' or body like '%"&keyword&"%'  "
+set rsTop=ADO.execute(SelectTechSQL)
+
+
+%>
+
+<p align="center"><font face="Simplified Arabic" size="3">search resaults</font></p>
+
+>>>>>>> origin/master
 <%
    function lookInBod()
    %>
@@ -68,13 +83,18 @@
 
     do while not rsBod.eof
 %>
+<<<<<<< HEAD
 	     <p><b><a href="blocks.asp?field=topics_details&id=<%=rsBod("id")%>"><%response.write rsBod("subject")%></a></b></p>
+=======
+	<p><b><a href="blocks.asp?field=topics_details&id=<%=rsTop("id")%>"><%response.write rsTop("subject")%></a></b></p>
+>>>>>>> origin/master
 <% 
 	rsBod.movenext
 	loop
    end function
 %>
 <%
+<<<<<<< HEAD
 	keyword=request.form("keyword")
 	top=request.form("topicS")
 	subj=request.form("subS")
@@ -84,6 +104,10 @@
 
 <%
    if top <>"" then lookInTopic()
+=======
+	ADO.close
+	set ADO=nothing
+>>>>>>> origin/master
 %>
 
 <%'================================================ FOR SUBJECTS ======================================================%>
@@ -91,10 +115,3 @@
    if subj <>"" then lookInSub()
 %>
 <%'================================================ FOR BODY ======================================================%>
-<%
-   if bod <>"" then lookInBod()
-
-	ADO.close
-	set ADO=nothing
-%>
-<!--#include file="pageEnd.txt" -->

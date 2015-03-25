@@ -2,6 +2,7 @@
   <body dir="ltr">
   
 
+<<<<<<< HEAD
   <form method="POST" action="chkData.asp" name="Login">
 		  <p dir="ltr">  &nbsp;</p>
 		  <p >  You should be a registered customer to be able to comment </p>
@@ -12,6 +13,22 @@
 		  <input type="password" name="Password" size="20" ></p>
 	  
 		  <p></p><input type="submit" value="Submit" name="submit"></p>
+=======
+  
+  <p >  You should be a registered customer to be able to comment </p>
+  <p >  please LogIn here  </p>
+  
+  <p >
+ customer name :
+  <input type="text" name="Name" size="20" ></p>
+  <p>customer password :
+  <input type="password" name="Password" size="20" ></p>
+  
+  <p><input type="Text" value=""</p>
+  <p></p><input type="submit" value="Submit" name="submit"></p>
+  
+ 
+>>>>>>> origin/master
   </form>
   <%
   error=Request.querystring("error")
@@ -30,6 +47,10 @@
                   Response.write "<b><font color=#FF0000>wrong password</font></b>"
                End If
             End If
+<<<<<<< HEAD
+=======
+            
+>>>>>>> origin/master
          End If
       End If
     
@@ -37,4 +58,6 @@
   %>
   
 
+<<<<<<< HEAD
 <!--#include file="pageEnd.txt" -->
+=======

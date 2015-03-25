@@ -1,8 +1,9 @@
 
 
-<%   Name=Request.form("Name")
-     Password=Request.form("Password")
-         
+
+=======
+
+>>>>>>> origin/master
      
      
       If Name = "" Then
@@ -42,4 +43,8 @@
      
                 End If
             End If
+<<<<<<< HEAD
      %>
+=======
+     %>
+>>>>>>> origin/master
