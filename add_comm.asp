@@ -15,6 +15,8 @@
 		  <p></p><input type="submit" value="Submit" name="submit"></p>
 =======
   
+  
+  
   <p >  You should be a registered customer to be able to comment </p>
   <p >  please LogIn here  </p>
   
