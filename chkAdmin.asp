@@ -7,6 +7,7 @@
      
       If Name = "" Then
              response.redirect ("admin.asp?error=Name_Null")
+              response.redirect ("admin.asp?error=Name_Null")
    
           Else
               If Password = "" Then
