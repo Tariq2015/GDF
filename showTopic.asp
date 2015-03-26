@@ -4,8 +4,6 @@
 <!--#include file="connection.txt" -->
 
 
-
-
 <% field=request.querystring("field") %>
 <p align="center"><font face="Simplified Arabic">well come in our topic: <%response.write (field)%></font></p>
 <%
@@ -43,7 +41,7 @@ ADO.close
 set ADO=Nothing
 %>
 
-<p align="center"><font face="Simplified Arabic"><a href="add_comm.asp">Add Comment</a></font></p>
+<p align="center"><font face="Simplified Arabic"><a href="add_comm.asp?field=<%=field%>">Add Comment</a></font></p>
 
 <!--# include file "pageEnd.txt"-->
 

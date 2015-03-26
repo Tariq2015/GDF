@@ -1,9 +1,8 @@
 <!--#include file="pageStyle.txt" -->
   <body dir="ltr">
   
-
-<<<<<<< HEAD
-  <form method="POST" action="chkData.asp" name="Login">
+  <% field=Request.querystring("field")%>
+  <form method="POST" action="chkData.asp?field=<%=field%>" name="Login">
 		  <p dir="ltr">  &nbsp;</p>
 		  <p >  You should be a registered customer to be able to comment </p>
 		  <p >  please LogIn here  </p>
@@ -13,53 +12,29 @@
 		  <input type="password" name="Password" size="20" ></p>
 	  
 		  <p></p><input type="submit" value="Submit" name="submit"></p>
-=======
-  
-  
-  
-  <p >  You should be a registered customer to be able to comment </p>
-  <p >  please LogIn here  </p>
-  
-  <p >
- customer name :
-  <input type="text" name="Name" size="20" ></p>
-  <p>customer password :
-  <input type="password" name="Password" size="20" ></p>
-  
-  <p><input type="Text" value=""</p>
-  <p></p><input type="submit" value="Submit" name="submit"></p>
-  
- 
->>>>>>> origin/master
   </form>
   <%
   error=Request.querystring("error")
   If error <> "" then
 
-     If error = "Name_Null" Then
+     if error = "Name_Null" then
         Response.write "<b><font color=#FF0000>please inter user name</font></b>"
-     Else
-        If error = "Pass_Null" Then
+     else
+        if error = "Pass_Null" then
            Response.write "<b><font color=#FF0000>please give password</font></b>"
-         Else
-            If error = "Name_Entry" Then
+         else
+            if error = "Name_Entry" then
                Response.write "<b><font color=#FF0000>wrong user name</font></b>"
-            Else
-               If error = "Pass_Entry" Then
+            else
+               if error = "Pass_Entry" then
                   Response.write "<b><font color=#FF0000>wrong password</font></b>"
-               End If
-            End If
-<<<<<<< HEAD
-=======
-            
->>>>>>> origin/master
-         End If
-      End If
+               end if
+            end if
+         end if
+      end if
     
-  End If    
+  end if    
   %>
   
 
-<<<<<<< HEAD
 <!--#include file="pageEnd.txt" -->
-=======

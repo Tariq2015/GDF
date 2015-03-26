@@ -2,7 +2,7 @@
 
 <%   Name=Request.form("Name")
      Password=Request.form("Password")
-         
+     field=request.querystring("field")    
      
      
       If Name = "" Then
@@ -34,7 +34,7 @@
                               response.cookies ("Name")=Name
                  
                            End IF
-                           response.Redirect ("comment_inf.asp")
+                           response.Redirect ("comment_inf.asp?field="&field)
      
                        End If
              

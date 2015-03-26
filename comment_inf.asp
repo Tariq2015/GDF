@@ -1,64 +1,34 @@
 
 
 <!--#include file="pageStyle.txt" -->
-
-
-
-<p>  here to add customer comment </p>
-
-
-
 <!--#include file="connection.txt"-->
 
-
-
 <%
-topic=request.form("topic")
 subject=request.form("subject")
 body=request.form("body")
+dd1=date()
 
-%>
-
-<%
 Function AddF()
-
-addSQL= " insert into topics_details (topic,subject,body) values ('"&topic&"','"&subject&"','"&body&"')"
-<<<<<<< HEAD
+addSQL= " insert into topics_details (topic,subject,body,add_dat) values ('"&topic&"','"&subject&"','"&body&"','"&dd1&"')"
 'add1SQL= " insert into topics (topic) values ('"&topic&"')"
 ADO.execute(addSQL)
 'ADO.execute(add1SQL)
-=======
-add1SQL= " insert into topics (topic) values ('"&topic&"')"
-ADO.execute(addSQL)
-ADO.execute(add1SQL)
->>>>>>> origin/master
 %><p><font face="Arial" size="4" color="#008000">Thank you for your comment .. comment added</font></p><%
 
 End Function
+topic=request.querystring("field")
 %>
 <body>
-<<<<<<< HEAD
 <%
-   showTopic= " select * from topics "
-   set rsTopic=ADO.execute(showTopic)
+  ' showTopic= " select * from topics "
+  ' set rsTopic=ADO.execute(showTopic)
 %>
-<p align="center"><font color="#C11111" size="7" face="Simplified Arabic"><b>comment</b></font></p>
-<form method="POST" action="comment_inf.asp">
-	 <p><b>Topic: <select size="1" name="topic">
-	    
-			  <% do while not rsTopic.eof %>
-			  <option><%response.write rsTopic("topic")%></option>
-			  <% rsTopic.movenext
-			     loop %>
-			  </select></b></p>
-=======
-<p align="center"><font color="#C11111" size="7" face="Simplified Arabic"><b>comment</b></font></p>
-<form method="POST" action="comment_inf.asp">
-     <p><b>Topic: <input type="text" name="topic" size="20"></b></p>
->>>>>>> origin/master
-     <p><b>Subject: <input type="text" name="subject" size="20"></b></p>
-     <p><b>comment: </b></p> 
-     <p><b>&nbsp;<textarea rows="11" name="body" cols="78"></textarea></b></p>
+<p align="center"><font color="#C11111" size="4" face="Simplified Arabic"><b>comment</b></font></p>
+<form method="POST" action="comment_inf.asp?field=<%=topic%>">
+	 
+     <p><b>Subject:&nbsp; <input type="text" name="subject" size="20"></b></p>
+     <p><b>comment:  </b></p>
+     <p><b>&nbsp;<textarea rows="9" name="body" cols="85"></textarea></b></p>
      <p><input type="submit" value="Add" name="add"></p>
 </form>
 
@@ -75,7 +45,7 @@ ADO.close
 Set ADO=Nothing
 %>
 
-<p align="center"><font face="Simplified Arabic"><b><a href="admin_page.asp">Administrator</a></b></font></p>
+
 
 </body>
 

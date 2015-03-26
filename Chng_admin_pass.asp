@@ -13,11 +13,6 @@ function updatef()
 
 end function
 
-<<<<<<< HEAD
-=======
-
-
->>>>>>> origin/master
 function checkf()
 
 	selectSQL="select * from admin where name='"&username&"'"
@@ -59,11 +54,6 @@ else
 	end if
 end if
 
-<<<<<<< HEAD
-=======
-
-
->>>>>>> origin/master
 %>
 
 
@@ -72,10 +62,6 @@ end if
 <font face="Simplified Arabic" size="7">Change password</font></b></font></p>
     <form method="POST" action="const.asp"><!-- chng_admin_pass -->
   <p><font face="Simplified Arabic" size="3">admin name   : <input type="text" name="username" size="25"></font></p>
-<<<<<<< HEAD
-=======
-    <p><font face="Simplified Arabic" size="3">confirm password: <input type="password" name="pass2" size="25"></font></p>
->>>>>>> origin/master
   <p><font face="Simplified Arabic" size="3">old password : <input type="password" name="oldpass" size="25"></font></p>
   <p><font face="Simplified Arabic" size="3">new password : <input type="password" name="pass1" size="25"></font></p>
   <p><font face="Simplified Arabic" size="3">confirm password: <input type="password" name="pass2" size="25"></font></p>
@@ -89,11 +75,5 @@ ADO.Close
 Set ADO=Nothing
 %>
 
-<<<<<<< HEAD
 </BODY>
 </HTML>
-=======
-
-</BODY>
-</HTML>
->>>>>>> origin/master

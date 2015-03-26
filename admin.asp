@@ -14,7 +14,6 @@
   <input type="password" name="Password" size="20" ></p>
   <p>
 
-
   <input type="submit" value="Submit" name="submit"></p>
   
   </form>
@@ -38,6 +37,13 @@
          End If
       End If
     
-<<<<<<< HEAD
-=======
-    
+  End If    
+  %>
+  
+
+  </td>
+  
+</table>
+
+</body>
+</html>

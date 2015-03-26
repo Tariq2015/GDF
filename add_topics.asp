@@ -3,17 +3,12 @@
 <!--#include file="connection.txt"-->
 <body>
 
-<<<<<<< HEAD
 <%
 selectSQL="select * from topics_suggest"
 	set rs=ADO.execute(selectSQL)
 
 	
 %>
-=======
-
-
->>>>>>> origin/master
 <b><p>Topics Suggested by Customers</p>
    <%   do while not rs.eof    %>
    <p> <%=rs("topic")%> </p>  
@@ -36,6 +31,4 @@ Set ADO=Nothing
 
 </body>
 
-<<<<<<< HEAD
 </html>
-=======
