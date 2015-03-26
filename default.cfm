@@ -11,7 +11,7 @@
 <table style="width:100%">
   <tr>
      <th>Name</th>
-     <th colspan="2">Telephone</th>
+     <th colspan="2">Telephone &gsm </th>
   </tr>
    <tr>
     <td>Bill Gates</td>
