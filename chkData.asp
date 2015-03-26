@@ -25,7 +25,6 @@
          		  Else       
                        If rs("password") <> password Then
                           response.redirect ("add_comm.asp?error=Pass_Entry")
-                          response.redirect ("add_comm.asp?error=Pass_Entry")
           
                        Else
          

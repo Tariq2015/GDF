@@ -1,7 +1,7 @@
 
 <!--#include file="pageStyle.txt" -->
 
-
+Admin Page
 <p align="center"><b><font face="Simplified Arabic" size="7" color="#C11111">
 SITE ADMINSTRATION</font></b></p>
 

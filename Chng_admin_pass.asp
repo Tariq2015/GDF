@@ -16,7 +16,7 @@ end function
 function checkf()
 
 	selectSQL="select * from admin where name='"&username&"'"
-	set usercheck=ADO.execute(select SQL)
+	set usercheck=ADO.execute(selectSQL)
 	
 	if usercheck.EOF then
 		response.write "No admin with this name"
@@ -45,7 +45,7 @@ if username = "" or oldpass = "" or pass1 = ""	or pass2 = ""	then
 	
 else
 	if pass1 <> pass2 then
-		response.write "password ... repeat"
+		response.write "wronge confirm password ... repeat"
 		
 	else
 

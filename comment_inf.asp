@@ -6,10 +6,13 @@
 <%
 subject=request.form("subject")
 body=request.form("body")
-dd1=date()
+'dd1=Now()
+'dd11="#"& dd1 &"#"
+'response.write(dd1)
+'response.write(<p>dd11</p>)
 
 Function AddF()
-addSQL= " insert into topics_details (topic,subject,body,add_dat) values ('"&topic&"','"&subject&"','"&body&"','"&dd1&"')"
+addSQL= " insert into topics_details (topic,subject,body,add_dat) values ('"&topic&"','"&subject&"','"&body&"',Now())"
 'add1SQL= " insert into topics (topic) values ('"&topic&"')"
 ADO.execute(addSQL)
 'ADO.execute(add1SQL)

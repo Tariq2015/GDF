@@ -40,7 +40,7 @@ do while not rs.eof
 <tr>	
 	<td width="20%" align="justify"><font face="Simplified Arabic"><b><%=rs1("subject")%>&nbsp;</b></td>
 	<td width="20%" align="center"><font dir="ltr" face="Simplified Arabic"><a href="const.asp"><b>Update</b></font><!-- topic_upd--></td>
-	<td width="20%" align="center"><font dir="ltr" face="Simplified Arabic"><a href="topic_del.asp?id=<%=rs("id")%>"><b>Delete</b></font></td>
+	<td width="20%" align="center"><font dir="ltr" face="Simplified Arabic"><a href="topic_del.asp?id=<%=rs1("id")%>"><b>Delete</b></font></td>
 </tr>
 <%
 	rs1.movenext

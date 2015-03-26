@@ -6,7 +6,6 @@
 <%
 selectSQL="select * from topics_suggest"
 	set rs=ADO.execute(selectSQL)
-	set rs=ADO.execute(selectSQL)
 
 	
 %>
