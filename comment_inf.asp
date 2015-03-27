@@ -28,7 +28,9 @@ topic=request.querystring("field")
 %>
 <p align="center"><font color="#C11111" size="4" face="Simplified Arabic"><b>comment</b></font></p>
 <form method="POST" action="comment_inf.asp?field=<%=topic%>">
-	 
+ddSQL= " insert into topics_details (topic,subject,body,add_dat) values ('"&topic&"','"&subject&"','"&body&"',Now())"
+'add1SQL= " insert into topics (topic) values ('"&topic&"')"
+ADO.execute(addSQL)	 
      <p><b>Subject:&nbsp; <input type="text" name="subject" size="20"></b></p>
      <p><b>comment:  </b></p>
      <p><b>&nbsp;<textarea rows="9" name="body" cols="85"></textarea></b></p>
