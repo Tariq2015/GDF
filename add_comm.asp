@@ -2,6 +2,8 @@
   <body dir="ltr">
   
   <% field=Request.querystring("field")%>
+ 
+ 
   <form method="POST" action="chkData.asp?field=<%=field%>" name="Login">
 		  <p dir="ltr">  &nbsp;</p>
 		  <p >  You should be a registered customer to be able to comment </p>
