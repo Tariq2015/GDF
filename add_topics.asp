@@ -16,7 +16,7 @@ selectSQL="select * from topics_suggest"
  </b> 
    
 <%
-	rs.movenext
+	
 loop
 %>
 
