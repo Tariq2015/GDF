@@ -17,7 +17,7 @@ End If
 
 id=request.querystring("id")
 
-deleteSQL = "delete * from topics_details where id="&id
+deleteSQL ="delete * from topics_details where id="&id
 ADO.execute(deleteSQl)
 
 response.redirect "topics_table.asp"
