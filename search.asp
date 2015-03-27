@@ -20,8 +20,6 @@
 	<p align="center"><input type="submit" value="search" name="B1"></p>
 </form>
 
-
-<% 
 	'err=request.querystring("error")
 	
 	'if err = "emptyKey" then response.write ("empty keyword ... please give keyword to look for")
