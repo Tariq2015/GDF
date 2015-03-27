@@ -4,6 +4,8 @@
 
 <%
 
+
+
 function updatef()
 
 	'updateSQL= " update topics set subject = '"&subject&"' , body = '"&body&"' where id="&id 
