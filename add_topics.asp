@@ -11,12 +11,21 @@ selectSQL="select * from topics_suggest"
 %>
 <b><p>Topics Suggested by Customers</p>
    <%   do while not rs.eof    %>
+<<<<<<< HEAD
    <p align="left" ><font color="#808000" face="Baskerville Old Face" size="+2"><%=rs("topic")%></font>  </p>  
    <p align="left"><font color="#808080" face="Simplified Arabic" size="+1"><%=rs("definition")%></font>  </p>
  </b> 
    
 <%
 	rs.movenext
+=======
+   <p> <%=rs("topic")%> </p>  
+   <p> <%=rs("definition")%> </p>
+ </b> 
+   
+<%
+	
+>>>>>>> origin/master
 loop
 %>
 
@@ -31,4 +40,6 @@ Set ADO=Nothing
 
 </body>
 
+<<<<<<< HEAD
 </html>
+=======

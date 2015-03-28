@@ -1,7 +1,8 @@
-<!--#include file="pageStyle.txt" -->
-  <body dir="ltr">
-  
-  <% field=Request.querystring("field")%>
+
+=======
+ 
+ 
+>>>>>>> origin/master
   <form method="POST" action="chkData.asp?field=<%=field%>" name="Login">
 		  <p dir="ltr">  &nbsp;</p>
 		  <p >  You should be a registered customer to be able to comment </p>
@@ -37,4 +38,8 @@
   %>
   
 
+<<<<<<< HEAD
 <!--#include file="pageEnd.txt" -->
+=======
+<!--#include file="pageEnd.txt" -->
+>>>>>>> origin/master
