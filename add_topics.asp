@@ -7,7 +7,6 @@
 selectSQL="select * from topics_suggest"
 	set rs=ADO.execute(selectSQL)
 
-	
 %>
 <b><p>Topics Suggested by Customers</p>
    <%   do while not rs.eof    %>
