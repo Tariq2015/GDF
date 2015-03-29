@@ -2,29 +2,32 @@
 
 <%   Name=Request.form("Name")
      Password=Request.form("Password")
-     field=request.querystring("field")    
+         
      
      
       If Name = "" Then
-             response.redirect ("add_comm.asp?error=Name_Null")
+             response.redirect ("admin.asp?error=Name_Null")
    
           Else
               If Password = "" Then
-                 response.redirect ("add_comm.asp?error=Pass_Null")
+                 response.redirect ("admin.asp?error=Pass_Null")
               Else
             
                   
-                   %><!--#include file="connection.txt" --><%
+                   %>
+				   
+	<!--#include file="connection.txt" -->
+	<%
                    
-        		  SelectSql="Select * from customers where nam='"&Name&"'"
+        		  SelectSql="Select * from admin where name='"&Name&"'"
          		  set rs=ADO.execute (SelectSql)
 
          		  If rs.eof  then 
-           		     response.Redirect ("add_comm.asp?error=Name_Entry")
+           		     response.Redirect ("admin.asp?error=Name_Entry")
          
          		  Else       
                        If rs("password") <> password Then
-                          response.redirect ("add_comm.asp?error=Pass_Entry")
+                          response.redirect ("admin.asp?error=Pass_Entry")
           
                        Else
          
@@ -34,7 +37,7 @@
                               response.cookies ("Name")=Name
                  
                            End IF
-                           response.Redirect ("comment_inf.asp?field="&field)
+                           response.Redirect ("admin_page.asp")
      
                        End If
              
