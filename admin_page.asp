@@ -12,8 +12,6 @@ SITE ADMINSTRATION</font></b></p>
 
 <p align="justify"><b><font face="Simplified Arabic"><a href="add_topics.asp">
 Add Topics</a></font></b></p><!-- const -->
-
-  </li>
   <li>
 
 <p align="justify"><b><font face="Simplified Arabic"><a href="topics_table.asp">
