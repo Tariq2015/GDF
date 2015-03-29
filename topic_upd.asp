@@ -14,7 +14,6 @@
 <html dir=rtl>
 <!--#include file="connection.txt" -->
 
-
 <%
 
 function updatef()
