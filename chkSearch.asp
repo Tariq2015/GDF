@@ -6,7 +6,6 @@
 	d1=request.form("sDate")
 	d1=request.form("eDate")
 	
-	
 	if key = "" then response.redirect("search.asp?error=emptyKey")
 	else
 	    if chkT="" and chkS="" and chkB="" then response.redirect("search.asp?error=must1")
