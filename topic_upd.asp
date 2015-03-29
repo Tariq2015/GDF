@@ -32,7 +32,6 @@ body=request.form("body")
 selectSQL="select * from topics_details where id="&id
 set rs=ADO.execute(selectSQL)
 
-%>
 
 <p align="center"><b><font face="Simplified Arabic" color="#C11111" size="7">
 Update</font></b></p>
