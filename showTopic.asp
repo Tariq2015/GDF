@@ -22,7 +22,6 @@ do while not rs.eof
 </tr>
 <tr>
 <td width="100%" dir="ltr" bgcolor="#ECECFF"><b>topic name : <%response.write rs("topic")%></b></td>
-</tr>
 <tr>
 <td width="100%" dir="ltr" bgcolor="#DFDFFF"><b>subject : <%response.write rs("subject")%></b></td>
 </tr>
