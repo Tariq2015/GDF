@@ -1,9 +1,5 @@
 
 
-<!--#include file="connection.txt" -->
-
-<%
-
 function updatef()
 
 	'updateSQL= " update topics set subject = '"&subject&"' , body = '"&body&"' where id="&id 
@@ -76,4 +72,8 @@ Set ADO=Nothing
 %>
 
 </BODY>
+<<<<<<< HEAD
 </HTML>
+=======
+</HTML>
+>>>>>>> origin/master

@@ -1,7 +1,6 @@
 
 
 <!--#include file="pageStyle.txt" -->
-<!--#include file="connection.txt"-->
 
 <%
 subject=request.form("subject")
@@ -12,7 +11,7 @@ body=request.form("body")
 'response.write(<p>dd11</p>)
 
 Function AddF()
-addSQL= " insert into topics_details (topic,subject,body,add_dat) values ('"&topic&"','"&subject&"','"&body&"',Now())"
+addSQL= " insert into topics_details (customer,topic,subject,body,add_dat) values ('"&name&"','"&topic&"','"&subject&"','"&body&"',Now())"
 'add1SQL= " insert into topics (topic) values ('"&topic&"')"
 ADO.execute(addSQL)
 'ADO.execute(add1SQL)
@@ -20,21 +19,22 @@ ADO.execute(addSQL)
 
 End Function
 topic=request.querystring("field")
+uid=request.querystring("uid")
 %>
 <body>
 <%
-  ' showTopic= " select * from topics "
-  ' set rsTopic=ADO.execute(showTopic)
+ selectUser="select * from customers where id="&uid 
+  set rs=ADO.execute(selectUser)
+  name=rs("nam")
+  response.write(name) 
+  response.write("this comment will be in:  ")
+  response.write(topic)
+  response.write("    by user   :")
+  response.write(name)
 %>
 <p align="center"><font color="#C11111" size="4" face="Simplified Arabic"><b>comment</b></font></p>
-<form method="POST" action="comment_inf.asp?field=<%=topic%>">
-<<<<<<< HEAD
+<form method="POST" action="comment_inf.asp?field=<%=topic%>&uid=<%=uid%>">
 	 
-=======
-ddSQL= " insert into topics_details (topic,subject,body,add_dat) values ('"&topic&"','"&subject&"','"&body&"',Now())"
-'add1SQL= " insert into topics (topic) values ('"&topic&"')"
-ADO.execute(addSQL)	 
->>>>>>> origin/master
      <p><b>Subject:&nbsp; <input type="text" name="subject" size="20"></b></p>
      <p><b>comment:  </b></p>
      <p><b>&nbsp;<textarea rows="9" name="body" cols="85"></textarea></b></p>
@@ -61,7 +61,4 @@ Set ADO=Nothing
 </html>
 
 
-<<<<<<< HEAD
 <!--# include file "pageEnd.txt"-->
-
-

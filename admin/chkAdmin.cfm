@@ -6,28 +6,25 @@
      
      
       If Name = "" Then
-             response.redirect ("admin.asp?error=Name_Null")
+             response.redirect ("add_comm.asp?error=Name_Null")
    
           Else
               If Password = "" Then
-                 response.redirect ("admin.asp?error=Pass_Null")
+                 response.redirect ("add_comm.asp?error=Pass_Null")
               Else
             
                   
-                   %>
-				   
-	<!--#include file="connection.txt" -->
-	<%
+                   %><!--#include file="connection.txt" --><%
                    
-        		  SelectSql="Select * from admin where name='"&Name&"'"
+        		  SelectSql="Select * from customers where nam='"&Name&"'"
          		  set rs=ADO.execute (SelectSql)
 
          		  If rs.eof  then 
-           		     response.Redirect ("admin.asp?error=Name_Entry")
+           		     response.Redirect ("add_comm.asp?error=Name_Entry")
          
          		  Else       
                        If rs("password") <> password Then
-                          response.redirect ("admin.asp?error=Pass_Entry")
+                          response.redirect ("add_comm.asp?error=Pass_Entry")
           
                        Else
          
@@ -37,7 +34,7 @@
                               response.cookies ("Name")=Name
                  
                            End IF
-                           response.Redirect ("admin_page.asp")
+                           response.Redirect ("comment_inf.asp")
      
                        End If
              

@@ -37,6 +37,7 @@
 		do while not rsTop.eof
 	  %>
 		     <p><b><a href="blocks.asp?field=topics_details&id=<%=rsTop("id")%>"><%response.write rsTop("topic")%></a></b></p>
+			 <p><%response.write rsTop("body")%></p>
 	  <% 
 		rsTop.movenext
 		loop
@@ -80,6 +81,7 @@
 		do while not rsSub.eof
 	%>
 		     <p><b><a href="blocks.asp?field=topics_details&id=<%=rsSub("id")%>"><%response.write rsSub("subject")%></a></b></p>
+			 <p><%response.write rsSub("body")%></p>
 	<% 
 		rsSub.movenext
 		loop   
@@ -123,6 +125,7 @@ if isdate(d1) and isdate(d2) then
 		do while not rsBod.eof
 	%>
 		     <p><b><a href="blocks.asp?field=topics_details&id=<%=rsBod("id")%>"><%response.write rsBod("subject")%></a></b></p>
+			 <p><%response.write rsBod("body")%></p>
 	<% 
 		rsBod.movenext
 		loop
@@ -152,7 +155,7 @@ else
 	     <p><a href="search.asp">BACK TO SEARCH PAGE  </a></p>
        <%
 	else %>
-		<!--#include file="connection.txt" -->
+	
 		
 		<%'================================================ FOR TOPICS ====================================================
 		   if top <>"" then lookInTopic()

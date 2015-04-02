@@ -20,5 +20,8 @@
 	<p align="center"><input type="submit" value="search" name="B1"></p>
 </form>
 
+<<<<<<< HEAD
 
 <!--#include file="pageEnd.txt" -->
+=======
+	

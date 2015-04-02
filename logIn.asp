@@ -16,7 +16,7 @@
   <input type="submit" value="Submit" name="submit"></p>
   
   </form>
-  <%
+  
   error=Request.querystring("error")
   If error <> "" then
 
