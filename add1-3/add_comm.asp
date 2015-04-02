@@ -36,8 +36,6 @@
     
   end if    
   %>
-  
-
 <<<<<<< HEAD
 <!--#include file="pageEnd.txt" -->
 =======
