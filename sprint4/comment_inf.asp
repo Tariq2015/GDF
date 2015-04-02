@@ -53,9 +53,6 @@ End If
 ADO.close
 Set ADO=Nothing
 %>
-
-
-
 </body>
 
 </html>
