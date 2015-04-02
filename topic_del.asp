@@ -17,7 +17,11 @@ End If
 
 id=request.querystring("id")
 
+<<<<<<< HEAD
 deleteSQL = "delete * from topics_details where id="&id
+=======
+deleteSQL ="delete * from topics_details where id="&id
+>>>>>>> origin/master
 ADO.execute(deleteSQl)
 
 response.redirect "topics_table.asp"
@@ -25,4 +29,7 @@ response.redirect "topics_table.asp"
 ADO.Close 
 Set ADO=Nothing
 
+<<<<<<< HEAD
 %>
+=======
+

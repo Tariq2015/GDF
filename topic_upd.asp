@@ -14,7 +14,6 @@
 <html dir=rtl>
 <!--#include file="connection.txt" -->
 
-
 <%
 
 function updatef()
@@ -33,7 +32,6 @@ body=request.form("body")
 selectSQL="select * from topics_details where id="&id
 set rs=ADO.execute(selectSQL)
 
-%>
 
 <p align="center"><b><font face="Simplified Arabic" color="#C11111" size="7">
 Update</font></b></p>
@@ -53,6 +51,7 @@ end if
   <p><font face="Simplified Arabic" size="3"><textarea rows="12" name="body" cols="58"><%response.write rs("body")%></textarea></font></p>
   <p><font face="Simplified Arabic" size="3"><input type="submit" value="Update" name="start"></font></p>
 </form>
+
 
 <%
 ADO.Close 
