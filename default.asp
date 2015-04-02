@@ -11,7 +11,7 @@
 		<a href="logIn.asp">Log In</a> &nbsp;&nbsp;&nbsp;
 		<a href="register">Register</a>
 	</p>
-</div>
+
 =======
 
 
