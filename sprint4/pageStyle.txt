@@ -1,0 +1,47 @@
+<html>
+<head>
+	<title>General Discussion Forum</title>
+</head>
+<%uid=request.querystring("uid")%>
+<body>
+<!--#include file="connection.txt" -->
+
+<div   style="top: 5; right: 400; position: absolute; z-index: 1;  visibility: show;">
+	 <p> 
+		<%if uid<>"" then 
+		    selUserSql="Select * from customers where id="&uid 
+			set cust=ADO.execute(selUserSql)
+			response.write("wellcome:  ")
+			response.write cust("nam")%>
+			<a href="default.asp?uid=<%=""%>">&nbsp;&nbsp;&nbsp;Log out</a>
+			<%
+			'ADO.close
+			'set ADO=nothing
+			
+		else	%>
+		<a href="logIn.asp">Log In</a> &nbsp;&nbsp;&nbsp;
+		<a href="register.asp">Register</a>
+<%      end if%>
+	</p>
+</div>
+<p align="right"><img border="0" align="left" src="ulogo.jpg">
+</p>
+<hr>
+<p align="center"><img border="0" src="title.jpg"> &nbsp;&nbsp;&nbsp; <img border="0" src="p1.jpg"></p>
+
+
+<table border="2" style="width:100%" >
+ 
+  <td valign="top"  width="200" bgcolor="#c0c0c0">
+	    <%m=uid%>
+	    <p align="left"><font face="Simplified Arabic" size="3"><b><a href="default.asp?uid=<%=uid%>">Home Page </a>
+	    <p align="left"><font face="Simplified Arabic" size="3"><b><a href="topicHeads.asp?uid=<%=uid%>">Forum Topics </a>
+	    <p align="left"><font face="Simplified Arabic" size="3"><b><a href="search.asp?uid=<%=uid%>">Search </a>
+	    <p align="left"><font face="Simplified Arabic" size="3"><b><a href="contact.asp?uid=<%=uid%>" >Contact Us </a>
+	    <p></p>
+		<p></p>
+		<p></p>
+		<p align="left"><font face="Simplified Arabic" size="3"><b><a href="admin.asp?uid=<%=uid%>" >  Adminstration  </a>
+	</td>
+	<td>  
+	  
