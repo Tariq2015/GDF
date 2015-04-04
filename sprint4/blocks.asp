@@ -7,6 +7,7 @@
 	selectSQL="select * from "&field&" where id="&id
 	set rs=ADO.execute(selectSQL)
 %>
+
 <div align="center">
 	<center>
 		<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="90%">
