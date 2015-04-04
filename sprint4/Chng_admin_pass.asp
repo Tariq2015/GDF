@@ -20,7 +20,7 @@ function updatef()
 
 	updateSQL= " update admin set password = '"&pass1&"' , name='"&username&"' where name='"&username&"' " 
 	ADO.execute(updateSQL)
-%><p><font face="Simplified Arabic" size="3">ÔßÑÇ áß.. áÞÏ Êã ÊÛííÑ ßáãÉ ÇáãÑæÑ ÈäÌÇÍ</font></p><%
+%><p><font face="Simplified Arabic" size="3"></font></p><%
 
 end function
 
