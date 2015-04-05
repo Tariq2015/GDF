@@ -18,7 +18,7 @@ End If
 
 function updatef()
 
-	updateSQL= " update admin set password = '"&pass1&"' , name='"&username&"' where name='"&username&"' " 
+	updateSQL= " update admin set pass = '"&pass1&"' , name='"&username&"' where name='"&username&"' " 
 	ADO.execute(updateSQL)
 %><p><font face="Simplified Arabic" size="3"></font></p><%
 
@@ -32,7 +32,7 @@ function checkf()
 	if usercheck.EOF then
 		response.write "áÇ íæÌÏ ãÔÑÝ ÈåÐÇ ÇáÇÓã"
 	else
-		if oldpass=usercheck("password") then
+		if oldpass=usercheck("pass") then
 			updatef()
 		else
 			response.write "áã ÊÏÎá ßáãÉ ÇáãÑæÑ ÇáÞÏíãÉ ÈÔßá ÕÍíÍ"

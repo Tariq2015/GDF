@@ -1,5 +1,3 @@
-
-
 <!--#include file="pageStyle.txt" -->
 
  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">

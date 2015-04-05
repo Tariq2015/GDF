@@ -1,5 +1,4 @@
 
-
 <!--#include file="pageStyle.txt" -->
 
 
@@ -28,9 +27,22 @@
 If topic="" or  def=""  then
      response.write "Not all fields are fulled .. use back button to return back "
 Else
-	    addSQL= " insert into topics_suggest (topic,definition,customer) values ('"&topic&"','"&def&"','"&name&"')"
-		ADO.execute(addSQL)
-		%><p><font face="Arial" size="4" color="#008000">Thank you for your suggestion .. suggest added</font></p><%
+	    selectTop= " select * from topics where topic='"&topic&"'"
+		set rsT=ADO.execute(selectTop)
+		if rsT.eof then 
+			selectTop= " select * from topics_suggest where topic='"&topic&"'"
+			set rsT=ADO.execute(selectTop)
+			if rsT.eof then 
+				addSQL= " insert into topics_suggest (topic,definition,customer) values ('"&topic&"','"&def&"','"&name&"')"
+				ADO.execute(addSQL)
+			    %><p><font face="Arial" size="4" color="#008000">Thank you for your suggestion .. suggest added</font></p><%
+		    else 
+				response.write("This suggestion already in suggested topics ...wait for admin approval")
+			end if
+		else
+		    response.write("This suggestion already in topics")
+		end if
+		
 End If
 %>
 <%
