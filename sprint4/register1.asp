@@ -1,6 +1,6 @@
 
-<!--#include file="pageStyle.txt" -->
 
+<!--#include file="pageStyle.txt" -->
 
 <%
   uid = Request.querystring("uid")
