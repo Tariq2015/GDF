@@ -1,5 +1,3 @@
-
-
 <!--#include file="connection.txt" -->
 
 <%
