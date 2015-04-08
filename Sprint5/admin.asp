@@ -4,8 +4,7 @@
 
   <form method="POST" action="chkAdmin.asp" name="Login">
   <p dir="ltr">  &nbsp;</p>
-  
-  <p >  please LogIn here  </p>
+    <p >  please LogIn here  </p>
   <p >
  Admin name :
   <input type="text" name="Name" size="20" ></p>
