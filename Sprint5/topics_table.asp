@@ -1,6 +1,4 @@
 
-
-
 <%
      
 Name_Cooky=Request.cookies("Name")
