@@ -14,6 +14,8 @@ End If
 
 <!--#include file="connection.txt" -->
 
+
+
 <%
 
 function updatef()
@@ -23,6 +25,8 @@ function updatef()
 %><p><font face="Simplified Arabic" size="3">Thank you .. pasword changed</font></p><%
 
 end function
+
+
 
 function checkf()
 
