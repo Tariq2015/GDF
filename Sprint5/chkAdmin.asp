@@ -2,9 +2,7 @@
 <%   Name=Request.form("Name")
      Password=Request.form("Password")
          
-     
-     
-      If Name = "" Then
+           If Name = "" Then
              response.redirect ("admin.asp?error=Name_Null")
    
           Else
