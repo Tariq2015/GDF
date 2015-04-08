@@ -1,7 +1,8 @@
+
+
 <%   Name=Request.form("Name")
      Password=Request.form("Password")
          
-     
      
       If Name = "" Then
              response.redirect ("add_comm.asp?error=Name_Null")
