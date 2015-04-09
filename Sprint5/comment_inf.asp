@@ -1,6 +1,6 @@
 
 
->>>>>>> origin/master
+
 <!--#include file="pageStyle.txt" -->
 
 <%
