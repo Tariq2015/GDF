@@ -1,4 +1,3 @@
-
 <%@ Language=VBScript CodePage = "1256"%>
 
 <%
@@ -73,7 +72,7 @@ end if
 <p align="center"><font color="#C11111"><b>
 
 <font face="Simplified Arabic" size="7">Changing Password</font></b></font></p>
-    <form method="POST" action="chng_admin_pass.asp">
+    <form method="POST" action="const.asp"><!-- chng_admin_pass-->
   <p><font face="Simplified Arabic" size="3">User Name <input type="text" name="username" size="25"></font></p>
   <p><font face="Simplified Arabic" size="3">Old Password
   <input type="password" name="oldpass" size="25"></font></p>
