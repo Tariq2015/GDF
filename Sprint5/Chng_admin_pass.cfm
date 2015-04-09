@@ -1,6 +1,6 @@
 
 
->>>>>>> origin/master
+
 <%@ Language=VBScript CodePage = "1256"%>
 
 <%
@@ -23,7 +23,7 @@ function updatef()
 	'updateSQL= " update general_news set subject = '"&subject&"' , body = '"&body&"' where id="&id 
 	updateSQL= " update admin set Password = '"&pass1&"' where name='"&username&"'" 
 	ADO.execute(updateSQL)
-%><p><font face="Simplified Arabic" size="3">‘ﬂ—« ·ﬂ.. ·ﬁœ  „  €ÌÌ— ﬂ·„… «·„—Ê— »‰Ã«Õ</font></p><%
+%><p><font face="Simplified Arabic" size="3">√î√ü√ë√á √°√ü.. √°√û√è √ä√£ √ä√õ√≠√≠√ë √ü√°√£√â √á√°√£√ë√¶√ë √à√§√å√á√ç</font></p><%
 
 end function
 
@@ -33,12 +33,12 @@ function checkf()
 	set usercheck=ADO.execute(selectSQL)
 	
 	if usercheck.EOF then
-		response.write "·« ÌÊÃœ „‘—› »Â–« «·«”„"
+		response.write "√°√á √≠√¶√å√è √£√î√ë√ù √à√•√ê√á √á√°√á√ì√£"
 	else
 		if oldpass=usercheck("password") then
 			updatef()
 		else
-			response.write "·„  œŒ· ﬂ·„… «·„—Ê— «·ﬁœÌ„… »‘ﬂ· ’ÕÌÕ"
+			response.write "√°√£ √ä√è√é√° √ü√°√£√â √á√°√£√ë√¶√ë √á√°√û√è√≠√£√â √à√î√ü√° √ï√ç√≠√ç"
 		end if
 	end if
 
@@ -55,11 +55,11 @@ pass2=request.form("pass2")
 <%
 
 if username = "" or oldpass = "" or pass1 = ""	or pass2 = ""	then
-	response.write "·„  ﬁ„ »≈œŒ«· »⁄÷ «·ÕﬁÊ·"
+	response.write "√°√£ √ä√û√£ √à√Ö√è√é√á√° √à√ö√ñ √á√°√ç√û√¶√°"
 	
 else
 	if pass1 <> pass2 then
-		response.write "ﬁ„  »≈œŒ«· ﬂ·„… „Œ ·›… ›Ì Œ«‰…  √ﬂÌœ ﬂ·„… «·„—Ê— «·ÃœÌœ….. «·—Ã«¡ ≈œŒ«· «·»Ì«‰«  „—… √Œ—Ï"
+		response.write "√û√£√ä √à√Ö√è√é√á√° √ü√°√£√â √£√é√ä√°√ù√â √ù√≠ √é√á√§√â √ä√É√ü√≠√è √ü√°√£√â √á√°√£√ë√¶√ë √á√°√å√è√≠√è√â.. √á√°√ë√å√á√Å √Ö√è√é√á√° √á√°√à√≠√á√§√á√ä √£√ë√â √É√é√ë√¨"
 		
 	else
 
@@ -73,19 +73,19 @@ end if
 
 <p align="center"><font color="#C11111"><b>
 
-<font face="Simplified Arabic" size="7"> €ÌÌ— ﬂ·„… «·„—Ê—</font></b></font></p>
+<font face="Simplified Arabic" size="7">√ä√õ√≠√≠√ë √ü√°√£√â √á√°√£√ë√¶√ë</font></b></font></p>
     <form method="POST" action="change_admin_password.asp">
-  <p><font face="Simplified Arabic" size="3">«”„ «·„” Œœ„ <input type="text" name="username" size="25"></font></p>
-  <p><font face="Simplified Arabic" size="3">ﬂ·„… «·„—Ê—
-  «·ﬁœÌ„… <input type="password" name="oldpass" size="25"></font></p>
-  <p><font face="Simplified Arabic" size="3">ﬂ·„… «·„—Ê—
-  «·ÃœÌœ… <input type="password" name="pass1" size="25"></font></p>
-  <p><font face="Simplified Arabic" size="3"> √ﬂÌœ ﬂ·„… «·„—Ê—
-  «·ÃœÌœ… <input type="password" name="pass2" size="25"></font></p>
-  <p><input type="submit" value=" €ÌÌ—" name="change"></p>
+  <p><font face="Simplified Arabic" size="3">√á√ì√£ √á√°√£√ì√ä√é√è√£ <input type="text" name="username" size="25"></font></p>
+  <p><font face="Simplified Arabic" size="3">√ü√°√£√â √á√°√£√ë√¶√ë
+  √á√°√û√è√≠√£√â <input type="password" name="oldpass" size="25"></font></p>
+  <p><font face="Simplified Arabic" size="3">√ü√°√£√â √á√°√£√ë√¶√ë
+  √á√°√å√è√≠√è√â <input type="password" name="pass1" size="25"></font></p>
+  <p><font face="Simplified Arabic" size="3">√ä√É√ü√≠√è √ü√°√£√â √á√°√£√ë√¶√ë
+  √á√°√å√è√≠√è√â <input type="password" name="pass2" size="25"></font></p>
+  <p><input type="submit" value="√ä√õ√≠√≠√ë" name="change"></p>
 </form>
 
-<p align="center"><font face="Simplified Arabic"><b><a href="adminsection.asp">≈œ«—… «·„Êﬁ⁄</a></b></font></p>
+<p align="center"><font face="Simplified Arabic"><b><a href="adminsection.asp">√Ö√è√á√ë√â √á√°√£√¶√û√ö</a></b></font></p>
 
 <%
 ADO.Close 
