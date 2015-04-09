@@ -1,3 +1,7 @@
+
+
+
+>>>>>>> origin/master
 <%@ Language=VBScript CodePage = "1256"%>
 
 <%
@@ -11,7 +15,11 @@ End If
 
 %> 
 
+
+
 <!--#include file="connection.txt" -->
+
+
 
 <%
 
@@ -22,6 +30,8 @@ function updatef()
 %><p><font face="Simplified Arabic" size="3">Thank you .. pasword changed</font></p><%
 
 end function
+
+
 
 function checkf()
 
