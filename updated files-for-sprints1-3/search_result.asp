@@ -44,7 +44,6 @@
     else response.write("<p> No resaults in Topics ....... </p>")
 	end if
    end function
-
    function lookInSub()
    %>
    <div align="center">
