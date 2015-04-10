@@ -17,7 +17,6 @@
 <%
 
 function updatef()
-
 	updateSQL= " update topics_details set topic = '"&topic&"' ,subject = '"&subject&"' where id="&id 
 	ADO.execute(updateSQL)
 	%><p><font face="Simplified Arabic" size="3">This subject updated .....</font></p><%
