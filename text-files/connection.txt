@@ -6,5 +6,4 @@ Set ADO=Server.CreateObject("ADODB.Connection")
 ADO.ConnectionString =ConnectionString
 ADO.Open
 ADO.Open
-
 %>

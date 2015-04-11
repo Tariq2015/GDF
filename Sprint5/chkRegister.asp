@@ -1,5 +1,4 @@
 
-
 <%   Name=Request.form("Name")
      Password=Request.form("Password")
 	 Passconf=Request.form("Passconf")
