@@ -28,7 +28,7 @@
 </form>
 <div  style="top: 310; right: 50; position: absolute; z-index: 1;  visibility: show;  ">
 	 <p>
-<form method="POST" action="const.asp"><!--suggest_topic.asp?uid=<%'=uid%>-->
+<form method="POST" action="suggest_topic.asp?uid=<%=uid%>"><!--const-->
 	<p align="center"><font face="@MingLiU_HKSCS-ExtB" color="#ff0000" size="+2"> 
 	                  Customers can vote on any suggested topic once </font></p>
 	
@@ -88,7 +88,7 @@ if u_vote<>"" then
 	 updateSug= " update topics_suggest set voteNo = "&newV&"  where topic='"&u_vote&"'" 
 	 ADO.execute(updateSug)
   else 
-  response.write("Sorry you vote on this topic .. you can try another")
+  response.write("||.....................................Sorry you vote on this topic .. you can try another")
   end if
   
 

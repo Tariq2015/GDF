@@ -3,7 +3,6 @@
 <!--#include file="connection.txt"-->
 <body>
 
-
 <%
 selectSQL="select * from topics_suggest"
 	set rs=ADO.execute(selectSQL)
@@ -26,9 +25,9 @@ selectSQL="select * from topics_suggest"
 	<td><p align="left" ><font color="#808080" face="Baskerville Old Face" size="+1"><%=rs("topic")%></font>  </p></td>
 	<td><p align="left"><font color="#808080" face="Simplified Arabic" size="+1"><%=rs("definition")%></font>  </p></td>
 	<td><p align="center"><font color="#808080" face="Simplified Arabic" size="+1"><%=rs("voteNo")%></font>  </p></td>
-	<td><p align="center"><a href="const.asp?id=<%=rs("ID")%>">DELETE</a></p></td><!-- sug_del-->
+	<td><p align="center"><a href="sug_del.asp?id=<%=rs("ID")%>">DELETE</a></p></td><!-- -->
 	<td><p align="center">
-	<a href="const.asp">APPROVE</a></p></td><!-- sug_approv.asp?id=<%=rs("id")%>&topic=<%=rs("topic")%> -->
+	<a href="sug_approv.asp?id=<%=rs("id")%>&topic=<%=rs("topic")%>">APPROVE</a></p></td><!--  -->
 </tr>
 <%
 	rs.movenext

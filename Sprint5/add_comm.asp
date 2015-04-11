@@ -6,8 +6,6 @@
   
   <%
   
- 
- 
   If uid <> "" then
        response.redirect("comment_inf.asp?field="&field&"&uid="&uid)
             else

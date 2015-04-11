@@ -1,5 +1,3 @@
-
-
 <!--#include file="pageStyle.txt" -->
   <body dir="ltr">
   <form method="POST" action="chkData.asp" name="Login">

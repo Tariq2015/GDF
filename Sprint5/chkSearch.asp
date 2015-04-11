@@ -1,5 +1,3 @@
-
-
 <%
 	key=request.form("keyword")
 	chkT=request.form("topicS")
