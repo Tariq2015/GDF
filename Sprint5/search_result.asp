@@ -9,7 +9,9 @@
 		<center>
 			<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="90%">
 				<tr>
-					<td width="100%" dir="ltr"><b>looking for <% response.write(keyword) %> in TOPICS</b></td>
+					<td width="100%" dir="ltr"><b>looking for 
+					<font color="#00ff00"><% response.write(keyword) %></font>
+					in TOPICS</b></td>
 				</tr>
 			</table>
 		</center>
@@ -36,8 +38,8 @@
     if not rsTop.eof then 
 		do while not rsTop.eof
 	  %>
-		     <p><b><a href="blocks.asp?field=topics_details&id=<%=rsTop("id")%>"><%response.write rsTop("topic")%></a></b></p>
-			 <p><%response.write rsTop("body")%></p>
+		     <p><b><a href="blocks.asp?field=topics_details&id=<%=rsTop("id")%>"><%response.write (left(rsTop("body"),25)&"......")%></a></b></p>
+			 <p></p><!-- <%'response.write rsTop("topic")%>-->
 	  <% 
 		rsTop.movenext
 		loop

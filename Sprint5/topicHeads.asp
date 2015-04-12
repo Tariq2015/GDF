@@ -29,7 +29,7 @@ ADO.close
 Set ADO=Nothing
 %>
 
-<p align="center"><font face="Simplified Arabic"><a href="suggest_topic.asp?uid=<%=uid%>">Suggest Topic</a></font></p><!-- const -->
+<p align="center"><font face="Simplified Arabic"><a href="suggest_topic.asp?uid=<%=uid%>">Suggest Or Vote Topics</a></font></p><!-- const -->
 
 <!--#include file="pageEnd.txt" -->
 
