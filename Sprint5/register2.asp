@@ -1,3 +1,4 @@
+
 <%@ Language=VBScript CodePage = "1256"%>
 
 <%
@@ -15,7 +16,7 @@ pass2=request.form("pass2")
 
 %>
 
-<!--#include file="connection.txt"†-->
+<!--#include file="connection.txt"¬†-->
 
 <%
 
@@ -23,7 +24,7 @@ function addf()
 
 	addSQL= " insert into customers (nam,password) values ('"&username&"','"&pass1&"') " 
 	ADO.execute(addSQL)
-%><p><font face="Simplified Arabic" size="3">‘ﬂ—« ·ﬂ.. ·ﬁœ  „ ≈÷«›… «·„‘—› »‰Ã«Õ</font></p><%
+%><p><font face="Simplified Arabic" size="3">√î√ü√ë√á √°√ü.. √°√û√è √ä√£ √Ö√ñ√á√ù√â √á√°√£√î√ë√ù √à√§√å√á√ç</font></p><%
 end function
 
 function checkf()
@@ -34,7 +35,7 @@ function checkf()
 	if usercheck.EOF then
 		addf()
 	else
-		response.write "«”„ «·„” Œœ„ „ÕÃÊ“ ”«»ﬁ«.. «·—Ã«¡ «Œ Ì«— Ê«Õœ« ¬Œ—"
+		response.write "√á√ì√£ √á√°√£√ì√ä√é√è√£ √£√ç√å√¶√í √ì√á√à√û√á.. √á√°√ë√å√á√Å √á√é√ä√≠√á√ë √¶√á√ç√è√á √Ç√é√ë"
 	end if
 
 end function
@@ -48,23 +49,23 @@ end function
 <meta name="GENERATOR" content="Microsoft FrontPage 5.0">
   <meta name="ProgId" content="FrontPage.Editor.Document">
   <meta http-equiv="Content-Type" content="text/html; charset=windows-1256">
-<TITLE>≈÷«›… „‘—›</TITLE>
+<TITLE>√Ö√ñ√á√ù√â √£√î√ë√ù</TITLE>
 
 </HEAD>
 
 <p align="center">
 
-<strong><font face="Simplified Arabic" color="#C11111" size="7">≈÷«›… „‘—›Ì‰</font></strong>
+<strong><font face="Simplified Arabic" color="#C11111" size="7">√Ö√ñ√á√ù√â √£√î√ë√ù√≠√§</font></strong>
 <p></P>
 
 <%
 
 if username = "" or pass1 = ""	or pass2 = "" then
-	response.write "·„  ﬁ„ »≈œŒ«· »⁄÷ «·ÕﬁÊ·"
+	response.write "√°√£ √ä√û√£ √à√Ö√è√é√á√° √à√ö√ñ √á√°√ç√û√¶√°"
 	
 else
 	if pass1 <> pass2 then
-		response.write "ﬁ„  »≈œŒ«· ﬂ·„… „Œ ·›… ›Ì Œ«‰…  √ﬂÌœ ﬂ·„… «·„—Ê—.. «·—Ã«¡ ≈œŒ«· «·»Ì«‰«  „—… √Œ—Ï"
+		response.write "√û√£√ä √à√Ö√è√é√á√° √ü√°√£√â √£√é√ä√°√ù√â √ù√≠ √é√á√§√â √ä√É√ü√≠√è √ü√°√£√â √á√°√£√ë√¶√ë.. √á√°√ë√å√á√Å √Ö√è√é√á√° √á√°√à√≠√á√§√á√ä √£√ë√â √É√é√ë√¨"
 		
 	else
 
@@ -79,10 +80,10 @@ end if
   <tr>
     <td width="79%" valign="top">
     <form method="POST" action="register2.asp">
-  <p><font face="Simplified Arabic" size="3">«”„ «·„” Œœ„ <input type="text" name="username" size="25"></font></p>
-  <p><font face="Simplified Arabic" size="3">ﬂ·„… «·„—Ê— <input type="password" name="pass1" size="25"></font></p>
-  <p><font face="Simplified Arabic" size="3"> √ﬂÌœ ﬂ·„… «·„—Ê— <input type="password" name="pass2" size="25"></font></p>
-  <p><input type="submit" value="≈÷«›…" name="add"></p>
+  <p><font face="Simplified Arabic" size="3">√á√ì√£ √á√°√£√ì√ä√é√è√£ <input type="text" name="username" size="25"></font></p>
+  <p><font face="Simplified Arabic" size="3">√ü√°√£√â √á√°√£√ë√¶√ë <input type="password" name="pass1" size="25"></font></p>
+  <p><font face="Simplified Arabic" size="3">√ä√É√ü√≠√è √ü√°√£√â √á√°√£√ë√¶√ë <input type="password" name="pass2" size="25"></font></p>
+  <p><input type="submit" value="√Ö√ñ√á√ù√â" name="add"></p>
 </form>
 </td>
   </tr>
@@ -94,7 +95,7 @@ end if
 ADO.Close 
 Set ADO=Nothing
 %>
-<p align="center"><font face="Simplified Arabic"><b><a href="admin_page.asp">≈œ«—… «·„Êﬁ⁄</a></b></font></p>
+<p align="center"><font face="Simplified Arabic"><b><a href="admin_page.asp">√Ö√è√á√ë√â √á√°√£√¶√û√ö</a></b></font></p>
 
 </font><font size="7" color="#C11111">
 
