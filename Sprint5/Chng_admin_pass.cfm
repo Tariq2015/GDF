@@ -1,4 +1,3 @@
-
 <%@ Language=VBScript CodePage = "1256"%>
 
 <%
@@ -22,6 +21,7 @@ function updatef()
 	updateSQL= " update admin set Password = '"&pass1&"' where name='"&username&"'" 
 	ADO.execute(updateSQL)
 %><p><font face="Simplified Arabic" size="3">ÔßÑÇ áß.. áÞÏ Êã ÊÛííÑ ßáãÉ ÇáãÑæÑ ÈäÌÇÍ</font></p><%
+
 
 end function
 
