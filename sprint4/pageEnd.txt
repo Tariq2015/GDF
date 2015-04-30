@@ -1,7 +1,0 @@
-  </td>
-  
-</table>
-    <p align="center" ><font face="Arial Black" size="4" color="#800080"> DESIGNERS:Hadeel Tariq, Hala Fathe, Shaymaa Alhayale, Tariq Atar, Ihsan Salman </font>  </p>
-	<p align="center" ><font face="Arial Black" size="4" color="#ff00ff"> Agile 2015 </font>  </p>
-</body>
-</html>
