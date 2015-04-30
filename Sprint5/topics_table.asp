@@ -32,11 +32,11 @@ function contentf()
 	%>
 			
 						
-			<p><font dir="ltr" face="Simplified Arabic"><a href="topic_del.asp?id=<%=rs1("id")%>"><b>Delete</b></font></p><!---->
-			<p><font face="Simplified Arabic" color="#0000ff"><b><%=rs1("subject")%>&nbsp;</b></font></p>
-			<p><b>date : <font face="Bell MT" color="#ff0000"><%response.write rs1("add_dat")%></font></b></p>
-			<p><b>Member: <font face="Bell MT" color="#ff0000"><%response.write rs1("customer")%></font></b></p>
-			<p><b>comment : <font face="Bell MT" color="#ff0000"><%response.write rs1("body")%></font></b></p>
+			<p><font dir="ltr" face="Simplified Arabic"><a href="topic_del.asp?id=<%=rs1("id")%>"><b>Delete</a></font><!---->
+			<b>--><font face="Simplified Arabic" color="#0000ff"><b><%=rs1("subject")%>&nbsp;</b></font>
+			<b><font face="Bell MT" color="#ff0000"><%response.write rs1("add_dat")%></font></b>
+			<b><font face="Bell MT" color="#0000ff"><%response.write rs1("customer")%></font></b>
+			<b><font face="Bell MT" color="#ff0000"><%response.write rs1("body")%></font></b></p>
 			
 		<hr color="#DFDFFF" width="90%">
 		

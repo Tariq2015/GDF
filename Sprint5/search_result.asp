@@ -83,8 +83,8 @@
 	
 		do while not rsSub.eof
 	%>
-		     <p><b><a href="blocks.asp?field=topics_details&id=<%=rsSub("id")%>"><%response.write rsSub("subject")%></a></b></p>
-			 <p><%response.write rsSub("body")%></p>
+		     <p><b><a href="blocks.asp?field=topics_details&id=<%=rsSub("id")%>"><%response.write (left(rsSub("body"),25)&"......")%></a></b></p>
+			 <p><%'response.write rsSub("body")%></p>
 	<% 
 		rsSub.movenext
 		loop   
@@ -127,8 +127,8 @@ if isdate(d1) and isdate(d2) then
     if not rsBod.eof then 
 		do while not rsBod.eof
 	%>
-		     <p><b><a href="blocks.asp?field=topics_details&id=<%=rsBod("id")%>"><%response.write rsBod("subject")%></a></b></p>
-			 <p><%response.write rsBod("body")%></p>
+		     <p><b><a href="blocks.asp?field=topics_details&id=<%=rsBod("id")%>"><%response.write (left(rsBod("body"),25)&"......")%></a></b></p>
+			 <p><%'response.write rsBod("body")%></p>
 	<% 
 		rsBod.movenext
 		loop
